@@ -62,7 +62,6 @@ if __name__ == "__main__":
     5. Çıkış
     ==========================================
     """)
-
     while True:
         choice = input("Bir seçenek gir (1-5): ")
         if choice == "1":
