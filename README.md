@@ -1,12 +1,20 @@
-# Terminal Cleaner 🧹
+<div align="center">
 
-Terminal üzerinden geçici dosyaları, cache klasörlerini temizler ve sistem bilgisi gösterir.
+# 🧹 Terminal Cleaner
+**WSL/Linux sistemi tek komutla temizle • Cache + Temp • Sistem bilgisi**
+
+![Badge](https://img.shields.io/badge/OS-WSL%20%7C%20Linux-blue)
+![Badge](https://img.shields.io/badge/Language-Python3-yellow)
+![Badge](https://img.shields.io/badge/Maintained-Yes-success)
+![Badge](https://img.shields.io/badge/Build-Auto-green)
+
+</div>
 
 ---
 
-## 🚀 Tek Satır Kurulum (WSL / Linux)
+## 🚀 Tek Satır Kurulum
 
-Terminale yapıştır ve çalıştır:
+Terminale yapıştır ⬇️
 
 \`\`\`bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/SevenKhan/terminal-cleaner/main/setup_cleaner.sh)" && source ~/.bashrc && cleaner
@@ -18,23 +26,38 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/SevenKhan/terminal-clean
 
 | Komut | Açıklama |
 |------|---------|
-| `cleaner` | Hızlı temizlik + sistem info |
-| `cleaner full` | Deep clean |
-| `cleaner quick` | Hızlı temizlik |
-| `cleaner menu` | Menü ile kullanım |
+| \`cleaner\` | Hızlı temizlik + sistem info |
+| \`cleaner full\` | Derin sistem temizliği |
+| \`cleaner quick\` | Sadece hızlı temizlik |
+| \`cleaner menu\` | Menü ile interaktif temizlik |
 
 ---
 
-## 🧠 Özellikler
+## 🖥️ Terminal Örneği
 
-- Geçici dosya temizleme
-- Cache temizleme
-- Disk kullanım bilgisi
-- Sistem bilgisi
-- Tek satır kurulum
+\`\`\`
+============ TERMINAL CLEANER ============  
+🧹 Temp temizlendi  
+⚡ Cache temizlendi  
+💾 Disk: 224 GB boş  
+🧠 RAM: Temizlendi  
+=========================================
+\`\`\`
 
 ---
 
-## 👨‍💻 Geliştirici
-Made with ❤️ by **SevenKhan**
+## 📁 Kurulum Script'i
+
+✔️ Dosyaları yükler  
+✔️ Alias ekler (\`cleaner\`)  
+✔️ Kullanıma hazır hale getirir  
+
+---
+
+## 👤 Geliştirici
+
+**Created by [SevenKhan](https://github.com/SevenKhan)**  
+WSL / DevOps / Automation
+
+⭐ Projeye yıldız vermeyi unutma!
 
