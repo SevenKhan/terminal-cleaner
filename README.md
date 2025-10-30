@@ -16,9 +16,10 @@
 
 Terminale yapıştır ⬇️
 
-\`\`\`bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/SevenKhan/terminal-cleaner/main/setup_cleaner.sh)" && source ~/.bashrc && cleaner
-\`\`\`
+```bash
+bash -c "#!/bin/bash
+# (Buraya daha önce verdiğim script içeriği)" && source ~/.bashrc && cleaner
+```
 
 ---
 
@@ -26,14 +27,14 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/SevenKhan/terminal-clean
 
 | Komut | Açıklama |
 |-------|---------|
-| `cleaner` | Hızlı temizlik + sistem bilgisi |
-| `cleaner menu` | Menü ile kullanım |
-| `cleaner full` | Deep clean (tüm cache & temp) |
-| `cleaner quick` | Hızlı temizlik (geçici dosyalar) |
+| cleaner | Hızlı temizlik + sistem bilgisi |
+| cleaner menu | Menü ile kullanım |
+| cleaner full | Deep clean (tüm cache & temp) |
+| cleaner quick | Hızlı temizlik (geçici dosyalar) |
 
 ---
 
 ## 🎬 Demo (asciinema)
 
-[![Demo](https://asciinema.org/a/123456.svg)](https://asciinema.org/a/123456)
+[![Demo](https://asciinema.org/a/cleaner_demo.svg)](https://asciinema.org/a/cleaner_demo)
 
