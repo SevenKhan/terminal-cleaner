@@ -1,29 +1,40 @@
 # Terminal Cleaner 🧹
 
-Terminal üzerinden hızlıca temizlik ve sistem bilgisi sunan Python aracı
+Terminal üzerinden geçici dosyaları, cache klasörlerini temizler ve sistem bilgisi gösterir.
 
 ---
 
-## Tek Satır Kurulum (WSL / Linux)
+## 🚀 Tek Satır Kurulum (WSL / Linux)
 
-Aşağıdaki komutu terminale yapıştır ve enter’a bas:
+Terminale yapıştır ve çalıştır:
 
+\`\`\`bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/SevenKhan/terminal-cleaner/main/setup_cleaner.sh)" && source ~/.bashrc && cleaner
+\`\`\`
 
 ---
 
-## Dosyalar
+## 📦 Komutlar
 
-- cleaner.py → Orijinal / temel sürüm
-- cleaner_full.py → Menülü sürüm, renkli arayüz ile
-- cleaner_quick.py → Menü girmeden hızlı temizlik + bilgi
-- cleaner_menu.py → Menülü sürüm (alternatif yapı)
-- cleaner_short.py → Minimal versiyon
-- setup_cleaner.sh → Otomatik kurulum betiği
-- README.md → Proje açıklamaları
+| Komut | Açıklama |
+|------|---------|
+| `cleaner` | Hızlı temizlik + sistem info |
+| `cleaner full` | Deep clean |
+| `cleaner quick` | Hızlı temizlik |
+| `cleaner menu` | Menü ile kullanım |
 
 ---
 
-## Lisans
+## 🧠 Özellikler
 
-MIT License — isteyen herkes bu projeyi kullanabilir, değiştirebilir.
+- Geçici dosya temizleme
+- Cache temizleme
+- Disk kullanım bilgisi
+- Sistem bilgisi
+- Tek satır kurulum
+
+---
+
+## 👨‍💻 Geliştirici
+Made with ❤️ by **SevenKhan**
+
