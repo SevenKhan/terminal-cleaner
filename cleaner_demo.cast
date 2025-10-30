@@ -1,0 +1,12 @@
+{"version": 2, "width": 120, "height": 30, "timestamp": 1761824157, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.00062, "o", "cleaner menu\r\nexit\r\n"]
+[0.075223, "o", "\u001b[?2004h\u001b]0;sevenkhan@KuMSaL-KuRTuLuS: ~/terminal-cleaner\u0007\u001b[01;32msevenkhan@KuMSaL-KuRTuLuS\u001b[00m:\u001b[01;34m~/terminal-cleaner\u001b[00m$ "]
+[0.075665, "o", "cleaner menu\r\n\u001b[?2004l\r"]
+[0.180279, "o", "\u001b[92m✅ Geçici dosyalar temizlendi!\u001b[0m\r\n"]
+[0.18057, "o", "\u001b[92m✅ Önbellek temizliği tamamlandı!\u001b[0m\r\n\u001b[93m\r\n🖥️ Sistem Bilgileri:\u001b[0m\r\nİşletim Sistemi: Linux 6.6.87.2-microsoft-standard-WSL2\r\n"]
+[0.189831, "o", "Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35\r\nPython Versiyonu: 3.10.12\r\n"]
+[0.190387, "o", "\u001b[93m\r\n💾 Disk Kullanımı:\u001b[0m\r\n"]
+[0.190857, "o", "Toplam: 250 GB\r\n"]
+[0.19124, "o", "Kullanılan: 13 GB\r\nBoş: 224 GB\r\n"]
+[0.200962, "o", "\u001b[?2004h\u001b]0;sevenkhan@KuMSaL-KuRTuLuS: ~/terminal-cleaner\u0007\u001b[01;32msevenkhan@KuMSaL-KuRTuLuS\u001b[00m:\u001b[01;34m~/terminal-cleaner\u001b[00m$ exit\r\n\u001b[?2004l\r"]
+[0.20132, "o", "exit\r\n"]
