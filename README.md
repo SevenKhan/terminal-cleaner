@@ -16,6 +16,24 @@
 
 Terminale yapıştır ⬇️
 
-```bash
+\`\`\`bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/SevenKhan/terminal-cleaner/main/setup_cleaner.sh)" && source ~/.bashrc && cleaner
+\`\`\`
+
+---
+
+## 📂 Menüler ve Komutlar
+
+| Komut | Açıklama |
+|-------|---------|
+| `cleaner` | Hızlı temizlik + sistem bilgisi |
+| `cleaner menu` | Menü ile kullanım |
+| `cleaner full` | Deep clean (tüm cache & temp) |
+| `cleaner quick` | Hızlı temizlik (geçici dosyalar) |
+
+---
+
+## 🎬 Demo (asciinema)
+
+[![Demo](https://asciinema.org/a/123456.svg)](https://asciinema.org/a/123456)
 
