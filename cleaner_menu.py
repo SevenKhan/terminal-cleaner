@@ -1,15 +1,11 @@
-import os, shutil, tempfile, platform
+import os, shutil, tempfile
+from colorama import Fore, Style, init
 
-# Renkler
-RED = "\033[91m"
-GREEN = "\033[92m"
-YELLOW = "\033[93m"
-CYAN = "\033[96m"
-RESET = "\033[0m"
+init(autoreset=True)
 
 def clear_temp():
     temp_dir = tempfile.gettempdir()
-    print(f"{CYAN}🧹 Geçici dosyalar temizleniyor: {temp_dir}{RESET}")
+    print(Fore.CYAN + f"🧹 Geçici dosyalar temizleniyor: {temp_dir}")
     for item in os.listdir(temp_dir):
         item_path = os.path.join(temp_dir, item)
         try:
@@ -18,7 +14,7 @@ def clear_temp():
             elif os.path.isdir(item_path):
                 shutil.rmtree(item_path)
         except: pass
-    print(f"{GREEN}✅ Geçici dosyalar temizlendi!{RESET}")
+    print(Fore.GREEN + "✅ Geçici dosyalar temizlendi!")
 
 def clear_cache():
     cache_dirs = [
@@ -27,48 +23,40 @@ def clear_cache():
         os.path.expanduser("~/.npm"),
         os.path.expanduser("~/.local/share/Trash")
     ]
-    print(f"{CYAN}🧹 Önbellek temizleniyor...{RESET}")
     for dir_path in cache_dirs:
         if os.path.exists(dir_path):
             try: shutil.rmtree(dir_path)
             except: pass
-    print(f"{GREEN}✅ Önbellek temizliği tamamlandı!{RESET}")
+    print(Fore.GREEN + "✅ Önbellek temizliği tamamlandı!")
 
-def sys_info():
-    print(f"{YELLOW}\n🖥️ Sistem Bilgileri:{RESET}")
+def system_info():
+    import platform, shutil
+    print(Fore.MAGENTA + "🖥️ Sistem Bilgileri:")
     print(f"İşletim Sistemi: {platform.system()} {platform.release()}")
     print(f"Platform: {platform.platform()}")
-    print(f"Python Versiyonu: {platform.python_version()}")
-
-def disk_usage():
     total, used, free = shutil.disk_usage("/")
-    print(f"{YELLOW}\n💾 Disk Kullanımı:{RESET}")
-    print(f"Toplam: {total // (2**30)} GB")
-    print(f"Kullanılan: {used // (2**30)} GB")
-    print(f"Boş: {free // (2**30)} GB")
+    print(Fore.YELLOW + f"Disk Kullanımı - Toplam: {total // (2**30)} GB, Kullanılan: {used // (2**30)} GB, Boş: {free // (2**30)} GB")
 
-# Menü
-while True:
-    print(f"""{CYAN}
-================= TERMINAL CLEANER =================
-1. Geçici dosyaları temizle
-2. Önbelleği temizle
-3. Sistem bilgilerini göster
-4. Disk kullanımını göster
-5. Çıkış
-====================================================
-{RESET}""")
-    choice = input("Bir seçenek gir (1-5): ")
-    if choice == "1":
-        clear_temp()
-    elif choice == "2":
-        clear_cache()
-    elif choice == "3":
-        sys_info()
-    elif choice == "4":
-        disk_usage()
-    elif choice == "5":
-        print(f"{CYAN}👋 Görüşürüz dostum!{RESET}")
-        break
-    else:
-        print(f"{RED}⚠️ Geçersiz seçim!{RESET}")
+def menu():
+    while True:
+        print(Fore.BLUE + "\n📋 Menü")
+        print("1️⃣ Hızlı Temizlik")
+        print("2️⃣ Full Temizlik")
+        print("3️⃣ Sistem Bilgisi")
+        print("4️⃣ Çıkış")
+        choice = input("Seçiminiz: ")
+        if choice == "1":
+            clear_temp()
+            clear_cache()
+        elif choice == "2":
+            clear_temp()
+            clear_cache()
+        elif choice == "3":
+            system_info()
+        elif choice == "4":
+            break
+        else:
+            print(Fore.RED + "⚠️ Geçersiz seçim!")
+
+if __name__ == "__main__":
+    menu()
