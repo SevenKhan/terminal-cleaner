@@ -12,4 +12,18 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/SevenKhan/terminal-clean
 
 ---
 
-README artık terminalden sorunsuz oluşturulabilir.
+## Dosyalar
+
+- cleaner.py → Orijinal / temel sürüm
+- cleaner_full.py → Menülü sürüm, renkli arayüz ile
+- cleaner_quick.py → Menü girmeden hızlı temizlik + bilgi
+- cleaner_menu.py → Menülü sürüm (alternatif yapı)
+- cleaner_short.py → Minimal versiyon
+- setup_cleaner.sh → Otomatik kurulum betiği
+- README.md → Proje açıklamaları
+
+---
+
+## Lisans
+
+MIT License — isteyen herkes bu projeyi kullanabilir, değiştirebilir.
