@@ -14,7 +14,7 @@
 
 ## 🚀 Tek Satır Kurulum
 
-Terminale yapıştır ve çalıştır:
+Terminale yapıştır ve enter’a bas:
 
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/SevenKhan/terminal-cleaner/main/setup_cleaner.sh)" && source ~/.bashrc && cleaner
