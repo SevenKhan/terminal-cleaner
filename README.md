@@ -14,27 +14,8 @@
 
 ## 🚀 Tek Satır Kurulum
 
-Terminale yapıştır ⬇️
+Terminale yapıştır ve çalıştır:
 
 ```bash
-bash -c "#!/bin/bash
-# (Buraya daha önce verdiğim script içeriği)" && source ~/.bashrc && cleaner
-```
-
----
-
-## 📂 Menüler ve Komutlar
-
-| Komut | Açıklama |
-|-------|---------|
-| cleaner | Hızlı temizlik + sistem bilgisi |
-| cleaner menu | Menü ile kullanım |
-| cleaner full | Deep clean (tüm cache & temp) |
-| cleaner quick | Hızlı temizlik (geçici dosyalar) |
-
----
-
-## 🎬 Demo (asciinema)
-
-[![Demo](https://asciinema.org/a/cleaner_demo.svg)](https://asciinema.org/a/cleaner_demo)
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/SevenKhan/terminal-cleaner/main/setup_cleaner.sh)" && source ~/.bashrc && cleaner
 
